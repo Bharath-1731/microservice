@@ -1,0 +1,86 @@
+groups:
+  - name: container-autoscale
+    rules:
+      - alert: ScaleUpOcelot
+        expr: sum(rate(container_cpu_usage_seconds_total{container_label_com_docker_swarm_service_name="ocelotgateway"}[1m])) > 0.5
+        for: 2m
+        labels:
+          severity: autoscale
+          action: scaleup
+          service: ocelotgateway
+        annotations:
+          summary: "Scale up ocelotgateway"
+          description: "ocelotgateway CPU usage > 50% for 2 minutes, scale up."
+      - alert: ScaleDownOcelot
+        expr: sum(rate(container_cpu_usage_seconds_total{container_label_com_docker_swarm_service_name="ocelotgateway"}[1m])) < 0.2
+        for: 5m
+        labels:
+          severity: autoscale
+          action: scaledown
+          service: ocelotgateway
+        annotations:
+          summary: "Scale down ocelotgateway"
+          description: "ocelotgateway CPU usage < 20% for 5 minutes, scale down."
+
+      - alert: ScaleUpServiceA
+        expr: sum(rate(container_cpu_usage_seconds_total{container_label_com_docker_swarm_service_name="servicea"}[1m])) > 0.5
+        for: 2m
+        labels:
+          severity: autoscale
+          action: scaleup
+          service: servicea
+        annotations:
+          summary: "Scale up servicea"
+          description: "servicea CPU usage > 50% for 2 minutes, scale up."
+      - alert: ScaleDownServiceA
+        expr: sum(rate(container_cpu_usage_seconds_total{container_label_com_docker_swarm_service_name="servicea"}[1m])) < 0.2
+        for: 5m
+        labels:
+          severity: autoscale
+          action: scaledown
+          service: servicea
+        annotations:
+          summary: "Scale down servicea"
+          description: "servicea CPU usage < 20% for 5 minutes, scale down."
+
+      - alert: ScaleUpServiceB
+        expr: sum(rate(container_cpu_usage_seconds_total{container_label_com_docker_swarm_service_name="serviceb"}[1m])) > 0.5
+        for: 2m
+        labels:
+          severity: autoscale
+          action: scaleup
+          service: serviceb
+        annotations:
+          summary: "Scale up serviceb"
+          description: "serviceb CPU usage > 50% for 2 minutes, scale up."
+      - alert: ScaleDownServiceB
+        expr: sum(rate(container_cpu_usage_seconds_total{container_label_com_docker_swarm_service_name="serviceb"}[1m])) < 0.2
+        for: 5m
+        labels:
+          severity: autoscale
+          action: scaledown
+          service: serviceb
+        annotations:
+          summary: "Scale down serviceb"
+          description: "serviceb CPU usage < 20% for 5 minutes, scale down."
+
+      - alert: ScaleUpServiceC
+        expr: sum(rate(container_cpu_usage_seconds_total{container_label_com_docker_swarm_service_name="servicec"}[1m])) > 0.5
+        for: 2m
+        labels:
+          severity: autoscale
+          action: scaleup
+          service: servicec
+        annotations:
+          summary: "Scale up servicec"
+          description: "servicec CPU usage > 50% for 2 minutes, scale up."
+      - alert: ScaleDownServiceC
+        expr: sum(rate(container_cpu_usage_seconds_total{container_label_com_docker_swarm_service_name="servicec"}[1m])) < 0.2
+        for: 5m
+        labels:
+          severity: autoscale
+          action: scaledown
+          service: servicec
+        annotations:
+          summary: "Scale down servicec"
+          description: "servicec CPU usage < 20% for 5 minutes, scale down."

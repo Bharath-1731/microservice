@@ -1,0 +1,127 @@
+﻿d:\app\
+│
+├── service-a\
+│   ├── backend\
+│   │   ├── Controllers\
+│   │   │   └── WeatherForecastController.cs
+│   │   ├── Keys\
+│   │   │   └── public.xml
+│   │   ├── logs\
+│   │   ├── Models\
+│   │   │   ├── AppDbContext.cs
+│   │   │   ├── User.cs
+│   │   │   ├── LoginRequest.cs
+│   │   │   ├── PasswordHelper.cs
+│   │   │   └── WeatherForecast.cs
+│   │   ├── NLog.config
+│   │   ├── Program.cs
+│   │   ├── ServiceA.csproj
+│   │   ├── appsettings.json
+│   │   └── Dockerfile
+│   └── frontend\
+│       ├── src\
+│       │   ├── app\
+│       │   │   ├── app.component.ts
+│       │   │   ├── app.component.html
+│       │   │   └── app.component.css
+│       │   ├── environments\
+│       │   │   ├── environment.ts
+│       │   │   └── environment.prod.ts
+│       │   └── index.html
+│       ├── angular.json
+│       ├── package.json
+│       ├── proxy.conf.json
+│       └── tsconfig.json
+│
+├── service-b\
+│   ├── backend\
+│   │   ├── Controllers\
+│   │   │   └── WeatherForecastController.cs
+│   │   ├── Keys\
+│   │   │   └── public.xml
+│   │   ├── logs\
+│   │   ├── Models\
+│   │   │   ├── AppDbContext.cs
+│   │   │   ├── User.cs
+│   │   │   ├── LoginRequest.cs
+│   │   │   ├── PasswordHelper.cs
+│   │   │   └── WeatherForecast.cs
+│   │   ├── NLog.config
+│   │   ├── Program.cs
+│   │   ├── ServiceB.csproj
+│   │   ├── appsettings.json
+│   │   └── Dockerfile
+│   └── frontend\
+│       ├── src\
+│       │   ├── app\
+│       │   │   ├── app.component.ts
+│       │   │   ├── app.component.html
+│       │   │   └── app.component.css
+│       │   ├── environments\
+│       │   │   ├── environment.ts
+│       │   │   └── environment.prod.ts
+│       │   └── index.html
+│       ├── angular.json
+│       ├── package.json
+│       ├── proxy.conf.json
+│       └── tsconfig.json
+│
+├── service-c\
+│   ├── backend\
+│   │   ├── Controllers\
+│   │   │   └── WeatherForecastController.cs
+│   │   ├── Keys\
+│   │   │   └── public.xml
+│   │   ├── logs\
+│   │   ├── Models\
+│   │   │   ├── AppDbContext.cs
+│   │   │   ├── User.cs
+│   │   │   ├── LoginRequest.cs
+│   │   │   ├── PasswordHelper.cs
+│   │   │   └── WeatherForecast.cs
+│   │   ├── NLog.config
+│   │   ├── Program.cs
+│   │   ├── ServiceC.csproj
+│   │   ├── appsettings.json
+│   │   └── Dockerfile
+│   └── frontend\
+│       ├── src\
+│       │   ├── app\
+│       │   │   ├── app.component.ts
+│       │   │   ├── app.component.html
+│       │   │   └── app.component.css
+│       │   ├── environments\
+│       │   │   ├── environment.ts
+│       │   │   └── environment.prod.ts
+│       │   └── index.html
+│       ├── angular.json
+│       ├── package.json
+│       ├── proxy.conf.json
+│       └── tsconfig.json
+│
+├── gateway/
+│   ├── Program.cs
+│   ├── appsettings.json
+│   ├── ocelot.json
+│   └── Dockerfile
+│
+├── nginx/
+│   ├── nginx.conf
+│   └── Dockerfile
+│
+├── monitoring/
+│   ├── prometheus.yml
+│   └── grafana/
+│       └── dashboards/
+│
+├── keys/
+│   ├── public.key
+│   └── private.key
+│
+├── keygen.sh
+├── docker-stack.yml
+├── systemd/
+│   └── multi-service-app.service
+├── README.md
+└── docs/
+    └── deployment.md

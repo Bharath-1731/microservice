@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\app\\service-b\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|d:\\app\\service-b\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|d:\\app\\service-b\\backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|d:\\app\\service-b\\backend\\models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|solutionrelative:models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|d:\\app\\service-b\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|d:\\app\\service-b\\backend\\keys\\public.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|solutionrelative:keys\\public.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|d:\\app\\service-b\\backend\\serviceb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1CF59B02-719B-86CA-A61E-C3C8E7C30FCB}|ServiceB.csproj|solutionrelative:serviceb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\app\\service-b\\backend\\Models\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Models\\WeatherForecast.cs",
+              "ToolTip": "D:\\app\\service-b\\backend\\Models\\WeatherForecast.cs",
+              "RelativeToolTip": "Models\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:02:23.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\app\\service-b\\backend\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\app\\service-b\\backend\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:02:13.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\app\\service-b\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\app\\service-b\\backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAQwIIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T11:22:19.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\app\\service-b\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\app\\service-b\\backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T11:20:47.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "public.xml",
+              "DocumentMoniker": "D:\\app\\service-b\\backend\\Keys\\public.xml",
+              "RelativeDocumentMoniker": "Keys\\public.xml",
+              "ToolTip": "D:\\app\\service-b\\backend\\Keys\\public.xml",
+              "RelativeToolTip": "Keys\\public.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-05-20T11:20:01.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServiceB.csproj",
+              "DocumentMoniker": "D:\\app\\service-b\\backend\\ServiceB.csproj",
+              "RelativeDocumentMoniker": "ServiceB.csproj",
+              "ToolTip": "D:\\app\\service-b\\backend\\ServiceB.csproj",
+              "RelativeToolTip": "ServiceB.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-20T10:52:56.358Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

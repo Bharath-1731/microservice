@@ -1,0 +1,113 @@
+version: '3.8'
+
+services:
+  ocelotgateway:
+    image: bharath1731/ocelotgateway:OCELOT_TAG
+    ports:
+      - "8031:7000"
+    networks:
+      - app-net
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+
+  servicea:
+    image: bharath1731/servicea:SERVICEA_TAG
+    networks:
+      - app-net
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+
+  serviceb:
+    image: bharath1731/serviceb:SERVICEB_TAG
+    networks:
+      - app-net
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+
+  servicec:
+    image: bharath1731/servicec:SERVICEC_TAG
+    networks:
+      - app-net
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+
+  prometheus:
+    image: prom/prometheus
+    user: "nobody"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheus/alert.rules.yml:/etc/prometheus/alert.rules.yml:ro
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - "9090:9090"
+    networks:
+      - app-net
+
+  alertmanager:
+    image: prom/alertmanager
+    user: "nobody"
+    volumes:
+      - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+    command:
+      - '--config.file=/etc/alertmanager/alertmanager.yml'
+    ports:
+      - "9093:9093"
+    networks:
+      - app-net
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - app-net
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    ports:
+      - "8041:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    networks:
+      - app-net
+
+  nodeexporter:
+    image: prom/node-exporter
+    ports:
+      - "9100:9100"
+    networks:
+      - app-net
+
+  autoscaler:
+    build: ./autoscaler
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - app-net
+    environment:
+      - DOCKER_HOST=unix:///var/run/docker.sock
+
+networks:
+  app-net:
+    driver: overlay
+    attachable: true

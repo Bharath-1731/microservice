@@ -1,0 +1,29 @@
+# Initialize Docker Swarm (run once on manager node)
+docker swarm init
+
+# Create overlay network for services
+docker network create --driver=overlay --attachable app-net
+
+# Deploy a stack (from script or manually)
+docker stack deploy -c docker-stack-dockerhub.yml mystack
+
+# List all stacks
+docker stack ls
+
+# List services in a stack
+docker stack services mystack
+
+# Scale a service (e.g., servicea to 5 replicas)
+docker service scale mystack_servicea=5
+
+# Update a service (e.g., force update to pull new image)
+docker service update --force mystack_servicea
+
+# Remove a stack
+docker stack rm mystack
+
+# List running containers (tasks) in a service
+docker service ps mystack_servicea
+
+# View logs for a service
+docker service logs mystack_servicea

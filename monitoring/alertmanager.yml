@@ -1,0 +1,22 @@
+global:
+  smtp_smarthost: 'smtp.gmail.com:587'
+  smtp_from: 'your-alert-email@gmail.com'
+  smtp_auth_username: 'your-alert-email@gmail.com'
+  smtp_auth_password: 'your-app-password'
+  smtp_require_tls: true
+
+route:
+  receiver: 'email-alerts'
+  routes:
+    - receiver: 'autoscaler'
+      match:
+        severity: autoscale
+
+receivers:
+  - name: 'email-alerts'
+    email_configs:
+      - to: 'your-receive-email@gmail.com'
+        send_resolved: true
+  - name: 'autoscaler'
+    webhook_configs:
+      - url: 'http://autoscaler:8081/alert'

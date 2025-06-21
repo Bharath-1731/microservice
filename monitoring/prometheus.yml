@@ -1,0 +1,31 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ['alertmanager:9093']
+
+rule_files:
+  - "alert.rules.yml"
+
+scrape_configs:
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+  - job_name: 'nodeexporter'
+    static_configs:
+      - targets: ['nodeexporter:9100']
+  - job_name: 'ocelotgateway'
+    static_configs:
+      - targets: ['ocelotgateway:7000']
+  - job_name: 'servicea'
+    static_configs:
+      - targets: ['servicea:80']
+  - job_name: 'serviceb'
+    static_configs:
+      - targets: ['serviceb:80']
+  - job_name: 'servicec'
+    static_configs:
+      - targets: ['servicec:80']

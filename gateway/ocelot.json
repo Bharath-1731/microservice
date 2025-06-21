@@ -1,0 +1,88 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "servicea",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/swagger/v1/servicea",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "serviceb",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/swagger/v1/serviceb",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "servicec",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/swagger/v1/servicec",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/metrics",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ocelot",
+          "Port": 8045
+        }
+      ],
+      "UpstreamPathTemplate": "/metrics",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:59651/"
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "servicea",
+      "Config": [
+        {
+          "Name": "Service A",
+          "Version": "v1",
+          "Url": "http://localhost:52738/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "serviceb",
+      "Config": [
+        {
+          "Name": "Service B",
+          "Version": "v1",
+          "Url": "/serviceb/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "servicec",
+      "Config": [
+        {
+          "Name": "Service C",
+          "Version": "v1",
+          "Url": "/servicec/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+
+}

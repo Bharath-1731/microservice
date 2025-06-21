@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Multi-Service .NET + Angular Microservices Platform
 
 ## Overview
@@ -63,3 +64,6 @@ All deployment scripts and stack files are in `/deployment/`.
 ---
 
    
+=======
+# microservice
+>>>>>>> 7feb9472e0afa813757d62ba85c4687b4dc1c6bb
